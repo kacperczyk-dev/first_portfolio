@@ -93,22 +93,22 @@ a {
         width: 90%;
         margin: auto;
         overflow: auto;
+        padding: 10px;
     }
     #aside {
         max-width: 25%;
     }
     #home img{
-        width: 25px;
-        height: 25px;
-    }
-    #skills .logo {
-        width: 25px;
-        height: 25px;
-        margin-right: 5px;
+        max-width: 25px;
+        max-height: 25px;
     }
     #contact img{
         width: 25px;
         height: 25px;
+    }
+    #skills span img.logo {
+        width: 35px;
+        height: 35px;
     }
 }
 /* style */
@@ -209,6 +209,7 @@ a {
 #about {
     margin-top: 55px;
     width: 760px;
+    overflow: hidden;
 }
 #text {
     border-top: 1px solid rgba(62, 62, 62, 0.2);
@@ -224,9 +225,10 @@ a {
 #skills {
     width: 760px;
     text-align: left;
+    overflow: hidden;
 }
 #skills h2 {
-    margin: 0 0 2% 0;
+    margin: 2% 0 2% 0;
     padding-bottom: 2%;
     text-align: center;
     color: rgb(52, 52, 52);
@@ -239,8 +241,6 @@ a {
     width: 80px;
     height: 80px;
     margin-right: 20px;
-    -webkit-transition: width 0.4s, height 0.4s, margin 0.4s;
-    transition: width 0.4s, height 0.4s, margin 0.4s;
 }
 #skills span {
     display: block;
@@ -260,6 +260,7 @@ a {
 #projects {
     margin: auto;
     width: 700px;
+    overflow: hidden;
 }
 #projects h4, h6{
     margin: 1% 0 1% 0;
