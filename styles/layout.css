@@ -1,0 +1,284 @@
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/* fonts pc */
+html, body {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: rgb(52, 52, 52);
+    margin: 0;
+    overflow: hidden;
+}
+h2 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 32px;
+}
+
+h4 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 26px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 150%;
+    word-spacing: 130%;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 167, 0);
+}
+.pWithBorderBottom {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(62, 62, 62, 0.2);
+}
+.textUnderBorder {
+    padding-top: 15px;
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+    html, body {
+        font-family: 'Merriweather', serif;
+        font-size: 12px;
+        color: rgb(52, 52, 52);
+        margin: 0;
+        overflow: hidden;
+    }
+    h2 {
+        font-family: 'Josefin Slab', serif;
+        font-size: 20px;
+    }
+
+    h4 {
+        font-family: 'Josefin Slab', serif;
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 150%;
+        word-spacing: 130%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    html, body {
+        font-family: 'Merriweather', serif;
+        font-size: 10px;
+        color: rgb(52, 52, 52);
+        margin: 0;
+        overflow: hidden;
+    }
+    h2 {
+        font-family: 'Josefin Slab', serif;
+        font-size: 18px;
+    }
+
+    h4 {
+        font-family: 'Josefin Slab', serif;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 10px;
+        line-height: 150%;
+        word-spacing: 130%;
+    }
+
+    #pageContainer .resize {
+        height: 90%;
+        width: 90%;
+        margin: auto;
+        overflow: auto;
+    }
+    #aside {
+        max-width: 25%;
+    }
+    #home img{
+        width: 25px;
+        height: 25px;
+    }
+    #skills .logo {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+    #contact img{
+        width: 25px;
+        height: 25px;
+    }
+}
+/* style */
+
+/* left-hand side menu + hamburger triggering it -------------------------- */
+#aside {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 0;
+    height: 100vh;
+    float: left;
+    overflow: auto;
+    font-family: 'Merriweather', serif;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    transition: width 0.350s;
+}
+#navigation {
+    margin-top: 80px;
+}
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#navigation li {
+    text-align: left;
+    margin-top: 20px;
+    display: block;
+}
+#navigation li a {
+    display: block;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#navigation li :hover{
+    color: rgb(255, 167, 0);
+}
+
+
+/* Displaying page container --------------------------------------- */
+#pageContainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: width 0.350s;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Burger toggle menu ---------------------------------------------- */
+#burger {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Home ------------------------------------------------------------ */
+#home{
+    width: 650px;
+    text-align: left;
+    overflow: hidden;
+}
+#home h2 {
+    margin: 0;
+    text-align: left;
+}
+#home h4 {
+    margin-top: 10px;
+    text-align: left;
+    color: rgba(75, 75, 75, 0.7);
+}
+#home header{
+    border-bottom: 1px solid rgba(62, 62, 62, 0.2);
+}
+.links {
+    text-align: center;
+}
+.links a img{
+    margin: 2% 3%;
+    width: 50px;
+    height: 50px;
+}
+
+/* About ----------------------------------------------------------- */
+#about {
+    margin-top: 55px;
+    width: 760px;
+}
+#text {
+    border-top: 1px solid rgba(62, 62, 62, 0.2);
+    text-align: left;
+    margin: 5% auto auto auto
+}
+#about img{
+    display: block;
+    height: 250px;
+    width: 100%;
+}
+/* Skills ---------------------------------------------------------- */
+#skills {
+    width: 760px;
+    text-align: left;
+}
+#skills h2 {
+    margin: 0 0 2% 0;
+    padding-bottom: 2%;
+    text-align: center;
+    color: rgb(52, 52, 52);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#skills p.first{
+    padding-top: 4%;
+}
+#skills .logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    -webkit-transition: width 0.4s, height 0.4s, margin 0.4s;
+    transition: width 0.4s, height 0.4s, margin 0.4s;
+}
+#skills span {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+#skills span ul {
+    display: inline-block;
+    margin: 10px;
+    color: rgb(91, 91, 91);
+    text-align: left;
+    padding: 0;
+    list-style-type: none;
+}
+/* Projects ---------------------------------------------------------- */
+
+#projects {
+    margin: auto;
+    width: 700px;
+}
+#projects h4, h6{
+    margin: 1% 0 1% 0;
+}
+.projImg {
+    width: 100%;
+    height: 250px;
+}
+.proj {
+    width: 100%;
+}
+
+/* Contact ------------------------------------------------------------------ */
+#contact {
+    width: 750px;
+    text-align: left;
+    overflow: hidden;
+}
+#contact h2 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(62, 62, 62, 0.2);
+}

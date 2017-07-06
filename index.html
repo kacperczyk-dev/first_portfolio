@@ -1,1 +1,36 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/layout.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/pagify.js"></script>
+    <script src="scripts/myScript.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <aside id="aside">
+        <nav id="navigation">
+            <ul>
+                <li id="homeLink"><a href="#home">Home</a></li>
+                <li id="aboutLink"><a href="#about">About</a></li>
+                <li id="skillsLink"><a href="#skills">Skills</a></li>
+                <li id="projectsLink"><a href="#projects">Projects</a></li>
+                <li id="contactLink"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div id="pageContainer">
+        <div id="burger" class="untoggled">
+            <a href="#">
+                <img id="toggleIcon" src="svg/menu_alt.svg" />
+            </a>
+        </div>
+        <div id="page"></div>
+    </div>
+</body>
+</html>
