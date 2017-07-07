@@ -68,6 +68,7 @@ a {
         width: 90%;
         margin: auto;
         padding: 10px;
+        align-self: flex-start;
     }
     #aside {
         max-width: 35%;
@@ -114,6 +115,7 @@ a {
         width: 90%;
         margin: auto;
         padding: 10px;
+        align-self: flex-start;
     }
     #aside {
         max-width: 25%;
