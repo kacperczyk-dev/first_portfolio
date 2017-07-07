@@ -5,6 +5,16 @@
 //toggle hamburger menu
 $(document).ready(function() {
 
+
+    $("#homeLink a").css({color: '#FFA700'});
+
+    $(".navLinks a").click(function(){
+        $(".navLinks a").each(function () {
+            $(this).css({color: '#000000'});
+        });
+        $(this).css({color: '#FFA700'});
+    });
+
     $("#burger").click(function (e) {
         e.preventDefault();
         var x = $("#burger").hasClass("toggled");
