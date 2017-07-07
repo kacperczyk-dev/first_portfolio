@@ -63,6 +63,13 @@ a {
         line-height: 150%;
         word-spacing: 130%;
     }
+    #pageContainer .resize {
+        height: 90%;
+        width: 90%;
+        margin: auto;
+        overflow: auto;
+        padding: 10px;
+    }
 }
 @media only screen and (max-width: 600px) {
     html, body {
