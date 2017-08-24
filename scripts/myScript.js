@@ -34,7 +34,7 @@ $(document).ready(function() {
         default: 'home',
         animation: 'fadeIn',
         animationSpeed: 'slow',
-        basePagePath: "/kacperczyk-dev.github.io/"
+        basePagePath: ""
     });
 });
 
